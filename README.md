@@ -4,7 +4,7 @@ This repository has been created for users like me how bought PCBWay RGB Glow Tu
 
 After some research I foundn that [one](https://elekstube.com/blogs/news/instructions-on-elekstube-clock-for-gen2-systems) but don't try it, it will just brick your clock.
 
-Please PCBWay provide official software to have our clock working as described on your site and be able to configure it.
+Please @PCBWay provide official software to have our clock working as described on your site and be able to configure it.
 
 As I bought 2 clocks, I was able to read back firmware from the working one and flash back the faulty one.
 

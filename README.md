@@ -12,8 +12,7 @@ I wasn't able to read more than 1M from esptool (not sure why) but I read firmwa
 
 ## How to flash back
 
-Just donwload the 4 binary files from here and type the following commands (change serial port name of course)
-
+Just donwload the 4 binary files from here and type the following commands (in the following order)
 
 ```shell
  esptool.py -p /dev/tty.usbserial-1320 -b 230400  write_flash 0x300000 flash_4M.bin 
@@ -21,5 +20,14 @@ Just donwload the 4 binary files from here and type the following commands (chan
  esptool.py -p /dev/tty.usbserial-1320 -b 230400  write_flash 0x100000 flash_2M.bin 
  esptool.py -p /dev/tty.usbserial-1320 -b 230400  write_flash 0x000000 flash_1M.bin 
 ```
+
+PS : You need to change serial port name of course
+
+I've tried to make only one firmware file addind 4 files into one, should works but did not tried.
+
+```shell
+ esptool.py -p /dev/tty.usbserial-1320 -b 230400  write_flash 0x000000 flash_full.bin 
+```
+
 
 Please star this repo if I saved your awesome clock :-)
